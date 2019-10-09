@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Carrera="clr-namespace:MVVM.ViewModel"
+             x:Class="MVVM.View.CarreraView">
+    <ContentPage.BindingContext>
+        <Carrera:CarreraViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Carrera" />
+            <Entry Placeholder="Años" />
+            <Button Text="BtnOk" Command="{Binding RegresarCommand}"/>
+            <Button Text="Ir a inicio de la app"  Command="{Binding IrARoot}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -14,7 +14,7 @@
             <Entry Text="{Binding MyStudent.Codigo}"/>
 
             <Button Text="Touch" Command="{Binding BotonCommand}"/>
-
+            <Button Text="Inscribir Carrera" Command="{Binding InscripcionCarrera}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

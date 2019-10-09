@@ -12,7 +12,7 @@ namespace MVVM
         {
             InitializeComponent();
 
-            MainPage = new StudentView();
+            MainPage = new NavigationPage(new StudentView());
         }
 
         protected override void OnStart()
